@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Swimming Pool",
+    "image": "swimming_pool.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kids' Pool",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Whirlpool",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Kids' Water Play",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Kids’ Playground",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Seating Area",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Swing Seat",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "name": "Water Cascade",
+    "image": "water_cascade.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Indoor Event Space",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "name": "Lounge/Mahjong",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "name": "Gourmet Kitchen",
+    "image": "gourmet_kitchen.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Karaoke Room",
+    "image": "karaoke_room.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Outdoor Event Space",
+    "image": ""
+  },
+  {
+    "id": 14,
+    "name": "Board Games Space",
+    "image": ""
+  },
+  {
+    "id": 15,
+    "name": "Pool Deck",
+    "image": ""
+  },
+  {
+    "id": 16,
+    "name": "BBQ Area",
+    "image": ""
+  },
+  {
+    "id": 17,
+    "name": "Sauna",
+    "image": ""
+  },
+  {
+    "id": 18,
+    "name": "Steam",
+    "image": ""
+  }
+]

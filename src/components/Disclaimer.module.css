@@ -1,0 +1,202 @@
+.disclaimer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.disclaimerContainer {
+  max-width: 750px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  background-color: #3b7c74;
+}
+
+.disclaimerLogo {
+  max-height: 120px;
+  height: 100%;
+  position: absolute;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.disclaimerLogo img {
+  height: 100%;
+}
+
+.disclaimerTextWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-family: "Avenir-Medium";
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.disclaimerTitle {
+  color: white;
+  text-align: center;
+}
+
+.disclaimerText {
+  width: 70%;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
+
+.disclaimerBtn {
+  color: white;
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.disclaimerBtn:hover {
+  background-color: #ffffffb3;
+  color: black;
+}
+
+.disclaimerTextWrapper.active {
+  display: none;
+}
+
+.introduction {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.introductionTitle {
+  font-family: "Avenir-Medium";
+  color: white;
+  text-align: center;
+}
+
+.introductionGuide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.introductionGuideCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  color: white;
+  justify-content: flex-start;
+  height: 100%;
+  font-family: "Avenir-Medium";
+  gap: 10px;
+}
+
+.introductionGuideCard svg {
+    height: 40px;
+  max-height: 50px;
+  width: 50px;
+}
+
+.introductionGuideCard p {
+  margin: 0;
+}
+
+.introductionText {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  text-align: center;
+}
+
+.introductionGuide hr {
+  height: 100%;
+  border: 1px solid white;
+  margin: 0;
+}
+
+.introductionBtn {
+  color: white;
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.introductionBtn:hover {
+  background-color: #ffffffb3;
+  color: black;
+}
+
+.introduction.active {
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .disclaimer {
+    .disclaimerContainer {
+      max-width: unset;
+      max-height: unset;
+      width: 90%;
+      height: 80%;
+
+      .disclaimerLogo {
+        max-height: 90px;
+        width: 77px;
+      }
+      .disclaimerTextWrapper {
+        position: relative;
+
+        .disclaimerTitle {
+          font-size: 0.9rem;
+        }
+
+        .disclaimerText {
+          width: 90%;
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .introduction {
+      .introductionTitle {
+        font-size: 0.8rem;
+        z-index: 10;
+      }
+      .introductionGuide {
+        flex-direction: column;
+        max-width: 120px;
+        gap: 10px;
+
+        .introductionGuideCard {
+          width: 100%;
+          height: 100%;
+          gap: 5px;
+        }
+      }
+      .introductionGuide hr {
+        display: none;
+      }
+    }
+  }
+}
+

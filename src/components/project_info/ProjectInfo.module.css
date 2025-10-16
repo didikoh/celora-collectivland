@@ -1,0 +1,64 @@
+.container {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: 10rem;
+  width: 350px; /* 可视窗口宽度 */
+  height: auto;
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  cursor: default;
+}
+
+.title {
+  display: flex;
+  cursor: move;
+  user-select: none;
+  justify-content: space-between;
+  background-color: #3b7c74c0;
+  color: white;
+  padding: 10px 20px;
+  h1 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+.closeBtn {
+  border: none;
+  background-color: unset;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.closeIcon{
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #00000099;
+  padding: 10px 20px;
+}
+
+.contentItem {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-bottom: white 2px solid;
+  padding-block: 10px;
+  p{
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+
+.last{
+  border-bottom: none;
+}

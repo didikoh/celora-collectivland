@@ -1,0 +1,111 @@
+.filterUnit {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filterUnitTitle {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sliderTextContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.sliderLabel {
+  color: white;
+  text-align: center;
+}
+
+.sliderWrapper {
+  gap: 8px;
+  position: relative;
+  color: white;
+  font-size: 12px;
+}
+
+.sliderContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px; /* pending leftside button and remove this*/
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.slider {
+  margin: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  background: white;
+  height: 5px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #bf9367;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #bf9367;
+  border-radius: 50%;
+  border: none;
+}
+
+.sliderValueContainer {
+  width: calc(100% - 14px);
+  position: relative;
+}
+.sliderValue {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  transform: translateX(-50%);
+}
+
+.filterUnitBtns {
+  display: grid;
+  gap: 15px;
+}
+
+.typeBtns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.orientationBtns {
+  grid-template-columns: repeat(2, 1fr);
+  padding-right: 30%;
+}
+
+.filterUnitBtn {
+  border: #fff 1px solid;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+
+.active{
+  background-color: #fff;
+  color: black;
+}

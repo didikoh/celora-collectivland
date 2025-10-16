@@ -1,0 +1,70 @@
+.levelContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.levelLabel {
+  color: #fff;
+}
+
+.levelButton {
+  border: #fff 1px solid;
+  background: none;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  color: black;
+  background-color: #fff;
+}
+
+.facilitiesContainer {
+  flex: 9;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: min-content;
+  max-height: 100%;
+  overflow-y: auto;
+  grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));
+  gap: 0.5rem 2rem;
+}
+.facilityItem {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.facilityBtn {
+  background: none;
+  border: none;
+  height: 1.2rem;
+  display: flex;
+  cursor: pointer;
+  img {
+    height: 100%;
+  }
+}
+
+.facilityName {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (hover: hover) {
+  .levelButton:hover {
+    transform: translateY(-2px);
+    color: black;
+    border: #000 1px solid;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+}

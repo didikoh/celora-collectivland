@@ -1,0 +1,42 @@
+.bottomBarContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background-color: #3b7c74c0;
+  display: flex;
+}
+
+.bottomNav {
+  width: auto;
+  display: flex;
+  gap: 3rem;
+  padding-left: 3rem;
+}
+
+.bottomNavBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding-block: 1rem;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.selector {
+    position: absolute;
+    top: 1px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+@media (hover: hover) {
+  .bottomNavBtn:hover {
+    transform: translateY(-5px);
+  }
+}

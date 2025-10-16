@@ -1,0 +1,32 @@
+.compassContainer {
+  position: absolute;
+  top: 2rem;
+  right: calc(50% - 150px);
+  width: 300px; /* 可视窗口宽度 */
+  height: auto;
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.compassWrapper{
+  position: relative;
+  display: flex;
+  transform: translateX(-120%);
+}
+
+.compassImg {
+  width:600px;
+  left: 0;
+  /* 一整张长图，默认不缩放宽度 */
+}
+
+.compassArrow {
+  font-size: 1rem;
+  color: white;
+  position: relative;
+  pointer-events: none;
+  align-self: center;
+}

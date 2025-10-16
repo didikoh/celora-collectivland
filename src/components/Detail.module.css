@@ -1,0 +1,142 @@
+.container {
+  display: grid;
+  grid-template-columns: 25% 1fr; /* 左栏固定宽度，右栏填满 */
+  overflow: hidden;
+  position: absolute;
+  right: 10%;
+  top: 12%;
+  z-index: 4;
+  height: 600px;
+  width: 600px;
+}
+
+/* 左侧边栏  */
+.sideBar {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  padding: 1rem;
+  background-color: #c79d69;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleText1 {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.titleText2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.titleText3 {
+  color: white;
+  font-size: 0.7rem;
+}
+
+/* Side 信息 + 图标栏 */
+.sideContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sideText1 {
+  font-size: 0.8rem;
+  color: #c79d69;
+}
+
+.sideText2 {
+  font-size: 1.2rem;
+}
+
+.line {
+  height: 1px;
+  background: #c79d69;
+  margin: 1rem 0;
+}
+
+.sideBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sideImg {
+  width: 24px;
+  height: 24px;
+}
+
+.sideBoxText {
+  font-size: 1rem;
+  color: #c79d69;
+}
+
+/* 右边内容区 */
+.content {
+  position: relative;
+  background: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.contentImg {
+  width: 100%;
+  align-self: center;
+}
+
+/* 按钮 */
+.closeBtn {
+  position: relative;
+  border: 1px solid #c79d69;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.3s ease;
+  svg {
+    width: 30px;
+    height: 30px;
+    color: #c79d69;
+  }
+}
+
+.Btn {
+  border: #c79d69 1px solid;
+  border-radius: 5px;
+  width: 175px;
+  height: 45px;
+  background: none;
+  color: #c79d69;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+  .closeBtn:hover {
+    background: #c79d69;
+    svg {
+      color: white;
+    }
+  }
+
+  .Btn:hover {
+    background: #c79d69;
+    color: white;
+  }
+}
