@@ -9,7 +9,8 @@ try {
                 level,
                 level_name,
                 facility_number,
-                facility_name
+                facility_name,
+                has_img
             FROM facilities
             ORDER BY level ASC, facility_number ASC";
     

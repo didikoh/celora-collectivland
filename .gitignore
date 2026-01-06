@@ -26,3 +26,4 @@ dist-ssr
 public/textures/*
 public/models/*
 public/location/*
+**/unreal/*.json
